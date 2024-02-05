@@ -109,7 +109,6 @@ function addComment() {
 }
 window.onload = function() {
     let comments = JSON.parse(localStorage.getItem('comments')) || [];
-    document.getElementById("likecheck").innerHTML=like;
     likedislike();
     let commentList = document.getElementById('commentList');
     comments.forEach(function(comment) {
