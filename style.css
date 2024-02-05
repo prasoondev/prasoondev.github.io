@@ -60,6 +60,10 @@ body {
     background-color: black;
   }
 @media screen and (max-width: 700px) {
+  .pfp{
+    height:100%;
+    width: 100%;
+  }
     .topnav {
       box-shadow: 0px 0px 0px 0px rgb(9, 28, 93);
         overflow:visible;
@@ -77,13 +81,13 @@ body {
       text-align: center;
       padding: 12px; 
       text-decoration: none;
-      font-size: 12px; 
+      font-size: 50%; 
       }      
       
       .topnav a.active {
         background-color:rgb(255, 255, 255);
         color:rgb(0, 0, 0);
-        font-size: 12px;
+        font-size: 50%;
         padding: 8px 12px;
       }
       .topnav a:hover {
@@ -91,7 +95,7 @@ body {
         text-align: center;
         padding: 8px 12px;
         text-decoration: none;
-        font-size: 12px;
+        font-size: 50%;
       }
       .topnav-light{
         background-color: rgb(255, 255, 255);
@@ -109,7 +113,7 @@ body {
       }
 }
 .textanimate{
-    font-size: 10px;
+    font-size: 50%;
     animation: animate 2s linear forwards;
 }
 .textanimate h1{
@@ -148,6 +152,14 @@ span{
     display:inline-block;
     font-weight: bolder;
     animation: mover 6s linear infinite;
+}
+@media screen and (max-width: 700px){
+  span{
+    font-size: 35%;
+    display:inline-block;
+    font-weight: bolder;
+    animation: mover 6s linear infinite;
+}
 }
 @keyframes mover {
     0%{
@@ -245,6 +257,27 @@ span:nth-child(5){
     padding-right: 20px;
     font-size: 60px;
 }
+@media screen and (max-width: 700px){
+  .e-flex {
+    color :#ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-right: 20px;
+    font-size: 100%;
+}
+.e-content {
+    font-size: 100%;
+}
+.e-flex-light{
+    color :black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-right: 20px;
+    font-size: 100%;
+}
+}
 .blogb {
   display: block;
   width: 100%;
@@ -268,4 +301,9 @@ span:nth-child(5){
   color :#ffffff;
   padding-right: 20px;
   font-size: 60px;
+}
+@media screen and (max-width: 700px){
+  .blogpage{
+    font-size: 60%;
+  }
 }
