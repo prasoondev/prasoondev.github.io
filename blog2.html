@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <button style="padding: 2%;" id="buttontext2" onclick="myFunction2()">Dark</button> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id ="blogpage"class="blogpage">
+        <h1>The Verge</h1>
+        <p>
+            The Verge is a blog focused on examining how technology will change the future.
+        
+        This blog provides news and opinion pieces on the latest technological developments in art, culture, and science for the mainstream audience.
+        
+        What Can We Learn From This Blog
+        
+        The Verge’s website homepage is vibrant – a black and white theme with bright accents of orange and magenta.
+        
+        There is a collage of large headlines and pictures to attract site visitors’ attention below the blog’s title and the navigation bar.
+        
+        In addition, some additional blog content is displayed on the right side of the homepage for easy access, such as featured videos and reviews.
+        </p>
+    <div style="display:none;" id ="likecheck">liked</div>
+    <a onclick="likedislike()">
+        <img
+        id="like"
+        src="images/nolike.png"
+        alt="likeunlike"
+        class="likeblog">
+    </a>
+    <h2>Comments</h2>
+    <textarea id="commentInput" rows="4" cols="50"></textarea>
+    <button onclick="addComment()">Add Comment</button>
+    <ul id="commentList"></ul>
+    <script src="code.js"></script>
+</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <button style="padding: 2%;" id="buttontext2" onclick="myFunction2()">Dark</button> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id ="blogpage"class="blogpage">
+    <h1>Dogs</h1>
+    <p>
+        Just like us, even our dogs love to have crunchy, delicious snacks now and then. That's why you need some nourishing and healthy treats for your pups to pamper them and teach them a new trick. However, it is not easy to find a healthy snack when you walk down the aisle in a supermarket as there are numerous choices. Thus, we have clubbed a few of the best dog treats available in India. These are trusted dog treats as they have been used by many pet parents and are loved by all pets. Go the extra mile to read it and see how many PAW-some choices you have!
+
+    </p>
+    <div style="display:none;" id ="likecheck">liked</div>
+    <a onclick="likedislike()">
+        <img
+        id="like"
+        src="images/nolike.png"
+        alt="likeunlike"
+        class="likeblog">
+    </a>
+    <h2>Comments</h2>
+    <textarea id="commentInput" rows="4" cols="50"></textarea>
+    <button onclick="addComment()">Add Comment</button>
+    <ul id="commentList"></ul>
+    <script src="code.js"></script>
+</div>
+</body>
+</html>
